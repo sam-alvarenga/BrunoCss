@@ -9,21 +9,84 @@
 
 h1, h2, h3 {
     color: #333;
-
 }
 
 p {
-
     color: #707470;
 }
 
-.navbar-container{
+.navbar-container {
     /* Largura */
     width: 100%;
     /* altera a cor de fundo */
     background-color: #232a23;
     /*define altura do elemento*/
     height: 80px;
-    /* em= representa uma vez o tamanho da fonte definida no elemento pai. Ex: se no pai foi definida fonte de 10px e o filho será de 10px e assim por diante. Caso o pai não tenha um tamanho definido ele irá usar como base 16px que é a fonte do navegador padding: 0 2em */  
-    padding: 0 2 em;
+    /* em= representa uma vez o tamanho da fonte definida no elemento pai. Ex: se no pai foi definida fonte de 10px e o filho será de 10px e assim por diante. Caso o pai não tenha um tamanho definido ele irá usar como base 16px que é a fonte do navegador padding: 0 2em unidade de medida relativa */
+    padding: 0 2em;
+    /* impede que a propriedade padding faça o elemento crescer de tamanho. Ex: Se padding de 10px for usado em um elemento de 200px de largura e 200px de altura ele irá fazer o elemento ter 220px de largura por 220px altura, aumentou o tamanho do elemento. Quando usamos o box-sizing: box-sizing= esse aumento de tamanho não irá acontecer pois o espaço do pading será descontado do elemento pai*/
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+nav {
+    position: relative;
+}
+
+.navbar-items {
+    position: absolute;
+    /* retira os marcadores da lista */
+    list-style: none;
+    /* display altera o comportamento dos elementos na tela. Ex: converte um elemento de bloco para um elemento de linha e um elemento e um elemento de linha para o elemento de bloco, assim como também permite definir um elemento como flexível usando o display:flex */
+    display: inline-block;
+    margin: 0;
+    /*coordenada que só é possível a utilização quando se tem um elemento definido como position:absolute*/
+    right: 0;
+    height: 80px;
+    /* line-height= altera o espaçamento entre as linhas de texto. Quando se usa um line-height da mesma altura que o elemento ele acaba por centralizar o texto na vertical */
+    line-height: 80px;
+}
+
+.navbar-items li {
+    display: inline-block;
+    /* text-transform:uppercase= transforma todo o texto em caixa alta(letras maiusculas) */
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items li a {
+    color: #fff;
+    /* Retira o estilo undeline do link */
+    text-decoration: none;
+    /* defini em quanto twmpo a animação do hover irá acontecer*/
+    transition: .5s;
+}
+
+/* hover= representa o passar do mouse sobre o elemento */
+.navbar-items li a:hover {
+    color: #ccc;
+}
+
+.default-btn {
+    background-color: #2cc76a;
+    padding: 15px 20px;
+    /* border-radius= arredonda as bordas do elemento*/
+    border-radius: 5px;
+}
+
+.main-banner {
+    /* define uma imagem para o fundo do elemento */
+    background-image: url(../img/mainbanner.png);
+     /* define como a imagem irá se adaptar ao elemento onde ela foi inserida. O valor cover define que a imagem terá o menor tamanho possível, fazendo assim que ela consiga caber dentro do elemento */
+    background-size: cover;
+    /* define se a imagem irá se repetir ou não. Ex: repeat:irá se repetir tanto no eixo  x quanto no y, repeat-y: irá se repetir somente no eixo y e no- repeat define que a imagem não irá se repetir */
+    background-repeat: no-repeat;
+    /* define como a imagem será exibida dentro do elemento onde ela foi inserida. Ex: nesse caso define que a imagem será posicionada a partir do seu centro no elemento onde ela estiver */
+    background-position: center;
+    padding: 10em 0;
 }
