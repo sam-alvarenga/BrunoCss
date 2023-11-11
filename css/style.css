@@ -156,7 +156,7 @@ nav {
 
 /* Preços */
 .pricing-container {
-    padding: 5em0;
+    padding: 5em 0;
     text-align: center;
 }
 
@@ -191,7 +191,7 @@ nav {
 }
 
 .plan li {
-    height: 75px;
+    height: 70.px;
     background-color: #e8e9ea;
     color: #333;
     line-height: 70px;
@@ -251,4 +251,77 @@ nav {
     font-size: 42px;
     margin-top: 0;
     margin-bottom: 15px;
+
+}
+
+.searchdomain-container p {
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+}
+
+/*  */
+.searchdomain-container input[type=text] {
+    margin-bottom: 25px;
+    width: 60%;
+    /* espaçamento interno do conteúdo da caixa  */
+    /* espaçamento do elemento dentro dele */
+    padding: 20px;
+    font-size: 20px;
+}
+
+.searchdomain-container input[type=submit] {
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Contato */
+.contact-container {
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input, .contact-textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* 0 equivalente a top, 10px equivale a direita e esquerda e 20px equivale a bottom */
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 468px;
+    height: 150px;
+}
+
+.contact-container input[type=submit] {
+    background-color: #2cc76a;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
 }
