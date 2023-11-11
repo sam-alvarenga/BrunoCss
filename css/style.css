@@ -300,7 +300,7 @@ nav {
     margin-bottom: 40px;
 }
 
-.contact-container input, .contact-textarea {
+.contact-container input, .contact-container textarea {
     width: 200px;
     padding: 10px 20px;
     font-size: 16px;
